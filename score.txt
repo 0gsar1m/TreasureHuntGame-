@@ -7,3 +7,6 @@
 40 (deneme4, level 2)
 -20 (deneme5, level 1)
 140 (deneme5, level 2)
+70 (deneme6, level 1)
+-20 (deneme6, level 2)
+10 (deneme7, level 1)
