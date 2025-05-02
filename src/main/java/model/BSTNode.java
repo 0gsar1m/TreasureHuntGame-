@@ -12,4 +12,9 @@ public class BSTNode {
         this.level = level;
         left = right = null;
     }
+
+    // ---- getter metodlar ----
+    public int getScore()        { return score; }
+    public String getPlayerName(){ return playerName; }
+    public int getLevel()        { return level; }
 }

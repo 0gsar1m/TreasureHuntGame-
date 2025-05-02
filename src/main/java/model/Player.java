@@ -146,4 +146,8 @@ public class Player {
     public String getPlayerName() {
         return playerName;
     }
+
+    public Node getCurrentNode() {
+        return currentNode;
+    }
 }

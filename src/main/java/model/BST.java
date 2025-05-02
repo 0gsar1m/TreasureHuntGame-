@@ -42,32 +42,18 @@ public class BST {
         return root;
     }
 
-    // Function to get highest score
-    public int getHighestScore() {
-        if (root == null) {
-            return -1; // No scores in the tree
-        }
-
-        BSTNode current = root;
-        while (current.right != null) {
-            current = current.right;
-        }
-
-        return current.score;
+    public BSTNode getMaxNode() {      // en sağ düğüm – global maksimum
+        if (root == null) return null;
+        BSTNode cur = root;
+        while (cur.right != null) cur = cur.right;
+        return cur;
     }
 
-    // Function to get lowest score
-    public int getLowestScore() {
-        if (root == null) {
-            return -1; // No scores in the tree
-        }
-
-        BSTNode current = root;
-        while (current.left != null) {
-            current = current.left;
-        }
-
-        return current.score;
+    public BSTNode getMinNode() {      // en sol düğüm – global minimum
+        if (root == null) return null;
+        BSTNode cur = root;
+        while (cur.left != null) cur = cur.left;
+        return cur;
     }
 
     // Function to get all scores (used for file writing)
